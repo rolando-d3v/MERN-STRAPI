@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { FaBed, FaBath, FaCar } from "react-icons/fa";
 import { Card } from "react-bootstrap";
 
@@ -12,7 +13,7 @@ function CardPropiedad({ e_pro }) {
       <Card.Body>
         <Card.Title className="text-capitalize">{e_pro.nombre} </Card.Title>
         <hr />
-        <div className='px-2' >
+        <div className="px-2">
           <h6>
             {e_pro.habitaciones} <FaBed /> : Habitaciones
           </h6>
