@@ -32,7 +32,7 @@ function Sidebar() {
         <ul className="w-full px-3 my-4 ">
           <h1 className="text-gray-400 pl-2 my-1 font-bold ">Mis Music </h1>
           {navList.map((nav, i) => (
-            <li className="text-gray-400 w-48 ">
+            <li key={i}  className="text-gray-400 w-48 ">
               <Link href={nav.href} key={i}>
                 <a className="nav-link w-full rounded-xl hover:text-white hover:bg-gray-700 ">
                   <span className="mx-2">{nav.icon}</span>
@@ -47,7 +47,7 @@ function Sidebar() {
         <ul className="w-full px-3 my-4">
           <h1 className="text-gray-400 pl-2 my-1 font-bold ">Mis Listas </h1>
           {linksDerecho.map((nav, i) => (
-            <li className=" text-gray-400 w-full  ">
+            <li key={i} className=" text-gray-400 w-full  ">
               <Link href={nav.href} key={i}>
                 <a className="nav-link w-full rounded-xl hover:text-white hover:bg-gray-700 ">
                   <span className="mx-2">{nav.icon}</span>

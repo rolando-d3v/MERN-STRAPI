@@ -10,36 +10,33 @@ export default function Casas() {
   const { Propiedades } = usePropiedades(filtradas);
   const { FiltroUI, categoria } = useFiltro();
 
-
   const obtenerPropiedades = async () => {
     const rex = await clienteAxios.get("/propiedades");
     setDataPropiedades(rex.data);
-    setFiltradas(rex.data)
+    setFiltradas(rex.data);
   };
-
 
   useEffect(() => {
     if (categoria) {
-      const filtrax = dataPropiedades.filter((pro)=> pro.categoria.nombre == categoria)
-      setFiltradas(filtrax)
-      console.log(filtrax);
+      const filtrax = dataPropiedades.filter(
+        (pro) => pro.categoria.nombre == categoria
+      );
+      setFiltradas(filtrax);
     } else {
       obtenerPropiedades();
     }
   }, [categoria]);
 
-
   return (
-    <div className='container-x' >
-      <main>
-        <div >
-        <h3 className="text-muted">Nuestras Casas y Departamentos</h3>
-        <FiltroUI />
+    <div className="container-x">
+      <div>
+        <div>
+          <h3 className="text-gray-400">Nuestras Casas y Departamentos</h3>
+          <FiltroUI />
         </div>
         <Propiedades />
-        <h4>hola</h4>
-        <h1>hola</h1>
-      </main>
+      </div>
+      <h4>h</h4>
     </div>
   );
 }

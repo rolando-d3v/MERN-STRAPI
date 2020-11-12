@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 
-import { FaBed, FaBath, FaCar } from "react-icons/fa";
+// import { FaBed, FaBath, FaCar } from "react-icons/fa";
 
 
 function CardPropiedad({ e_pro }) {
