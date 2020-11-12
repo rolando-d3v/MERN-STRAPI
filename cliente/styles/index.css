@@ -15,8 +15,8 @@
 
 
 /* <!-- LINK  NAV PARA NAVIGATION --> */
-.nav-linkx {
-  @apply flex items-center no-underline py-1;
+.nav-link {
+  @apply flex items-center no-underline py-2;
 }
 
 /*  <!-- component CARD --> */
