@@ -1,11 +1,12 @@
 import React from 'react'
 
-function Sidebar() {
+function Mainx() {
     return (
         <div>
-            
+           
+    <div>main</div>
         </div>
     )
 }
 
-export default Sidebar
+export default Mainx

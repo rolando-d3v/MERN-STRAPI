@@ -8,17 +8,16 @@
     "start": "next start"
   },
   "dependencies": {
-    "@emotion/babel-preset-css-prop": "^10.2.0",
-    "@emotion/core": "^10.1.1",
-    "@emotion/styled": "^10.0.27",
     "axios": "^0.21.0",
-    "babel-plugin-emotion": "^10.0.33",
     "bootstrap": "^4.5.3",
     "next": "10.0.1",
     "node-sass": "^5.0.0",
+    "postcss-flexbugs-fixes": "^5.0.1",
+    "postcss-preset-env": "^6.7.0",
     "react": "17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "17.0.1",
-    "react-icons": "^3.11.0"
+    "react-icons": "^3.11.0",
+    "tailwindcss": "^1.9.6"
   }
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import clienteAxios from "../config/clienteAxios";
-import { Form } from "react-bootstrap";
+
 
 function useFiltro() {
   const [dataCategorias, setDataCategorias] = useState([]);
@@ -20,15 +20,15 @@ function useFiltro() {
 
   const FiltroUI = () => (
     <div>
-      <Form.Group controlId="exampleForm.ControlSelect1">
-        <Form.Label>Selecciona una Categoria</Form.Label>
-        <Form.Control as="select" onChange={(e)=> setCategoria(e.target.value) } value={categoria} >
+      <form >
+        <label>Selecciona una Categoria</label>
+        <select as="select" onChange={(e)=> setCategoria(e.target.value) } value={categoria} >
           <option value=''> Todas las Categorias </option>
           {dataCategorias.map((e_cat) => (
             <option key={e_cat._id} value={e_cat.nombre} > {e_cat.nombre} </option>
           ))}
-        </Form.Control>
-      </Form.Group>
+        </select>
+      </form>
     </div>
   );
 
