@@ -12,7 +12,7 @@ import {
 export const navList = [
   { icon: <FaPenSquare />, href: "/casas", menu: "Formulario" },
   { icon: <FaSearch />, href: "/", menu: "Busqueda" },
-  { icon: <FaTable />, href: "/tabla", menu: "Tabla" },
+  { icon: <FaTable />, href: "/carousel", menu: "Tabla" },
   { icon: <FaOutdent />, href: "/tabla", menu: "Tabla" },
 ];
 
