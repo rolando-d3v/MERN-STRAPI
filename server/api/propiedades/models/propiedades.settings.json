@@ -45,6 +45,9 @@
     },
     "agente": {
       "model": "agente"
+    },
+    "precio": {
+      "type": "decimal"
     }
   }
 }

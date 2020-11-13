@@ -1,7 +1,6 @@
 // import React from "react";
 
-// import { FaBed, FaBath, FaCar } from "react-icons/fa";
-
+import { FaBed, FaBath, FaCar } from "react-icons/fa";
 
 function CardPropiedad({ e_pro }) {
   return (
@@ -15,11 +14,27 @@ function CardPropiedad({ e_pro }) {
       {/* CONTENEDOR TEXT */}
       <div className=" p-4 ">
         <div className="mb-8">
-          <div className="text-black font-bold text-xl mb-2">
+          <div className="text-black font-bold text-xl mb-2 uppercase ">
             {e_pro.nombre}
           </div>
-          <p className="text-grey-darker text-base">{e_pro.habitaciones}</p>
-          <p className="text-grey-darker text-base">{e_pro.estacionamiento}</p>
+          <div className='flex items-center hover:text-blue-500 ' >
+            <FaBed className='mx-2'  />
+            <p className="text-grey-darker text-base">
+              : {e_pro.habitaciones} Habitaciones
+            </p>
+          </div>
+          <div className='flex items-center hover:text-blue-500 ' >
+            <FaCar className='mx-2'  />
+            <p className="text-grey-darker text-base">
+              : {e_pro.estacionamiento} Estacionamiento
+            </p>
+          </div>
+          <div className='flex items-center hover:text-blue-500 ' >
+            <FaBath className='mx-2'  />
+            <p className="text-grey-darker text-base">
+              : {e_pro.sshh} sshh
+            </p>
+          </div>
         </div>
         <div className="flex justify-between text-xs">
           <div className="flex items-center">
@@ -29,8 +44,8 @@ function CardPropiedad({ e_pro }) {
               alt="Avatar of Jonathan Reinink"
             />
             <div className="text-sm text-gray-500">
-              <p className="leading-none">Jonathan Reinink</p>
-              <p>precio: {e_pro.sshh} </p>
+              <p className="leading-none">Propietario</p>
+              <p>precio: $ {e_pro.precio} </p>
             </div>
           </div>
 

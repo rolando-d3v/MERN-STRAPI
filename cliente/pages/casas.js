@@ -29,14 +29,17 @@ export default function Casas() {
 
   return (
     <div className="container-x">
-      <div>
+      <div className="mt-4">
         <div>
-          <h3 className="text-gray-400">Nuestras Casas y Departamentos</h3>
+          <h3 className="text-gray-500 text-3xl hover:text-blue-500 ">
+            Nuestras Casas y Departamentos
+          </h3>
           <FiltroUI />
         </div>
-        <Propiedades />
+        <div className='flex' >
+          <Propiedades />
+        </div>
       </div>
-      <h4>h</h4>
     </div>
   );
 }
