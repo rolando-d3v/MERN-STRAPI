@@ -4,9 +4,9 @@ import { FaBed, FaBath, FaCar } from "react-icons/fa";
 
 function CardPropiedad({ e_pro }) {
   return (
-    <div className="w-95 shadow-xl rounded-b-xl m-3 ">
+    <div className="shadow-xl rounded-b-xl m-3" style={{width: '22rem'}} >
       <div
-        className="h-68 bg-cover rounded-t-xl"
+        className="bg-cover bg-center  h-48 w-full rounded-t-xl"
         style={{
           backgroundImage: `url(http://localhost:1337${e_pro.imagen[0].url})`,
         }}
