@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
 import { FaQuoteRight } from "react-icons/fa";
 
-function CarouselComponent({ datax }) {
+function CarouselCompo2({ datax }) {
   const [value, setValue] = useState(0);
 
 
@@ -27,11 +27,11 @@ function CarouselComponent({ datax }) {
 
   return (
     <div
-      className="grid place-items-center relative h-screen md:h-auto overflow-hidden bg-gray-300 "
-      style={{ minHeight: "48vh" }}
+      className="grid place-items-center relative   h-auto overflow-hidden bg-gray-300 "
+      style={{ minHeight: "40vh" }}
     >
       {datax.map((item, index) => {
-        const { id, title, image, quote, name } = item;
+        const { id, title, image, quote, name, avatar } = item;
 
         let position = "translate-x-full opacity-0";
         if (index === value) {
@@ -43,23 +43,24 @@ function CarouselComponent({ datax }) {
         return (
           <article
             key={id}
-            className={`${position} transform md:px-48 mt-8 absolute transition transition-all duration-500 ease-in-out `}
+            className={`${position} w-full h-full  bg-cover bg-center transform md:px-48 py-4 absolute transition transition-all duration-500 ease-in-out`}
+            style={{backgroundImage: `url(${image})`}}
           >
             <div className="w-32 h-32 mx-auto">
               <img
                 className="h-full w-full rounded-full object-cover"
-                src={image}
+                src={avatar}
                 alt={name}
               />
             </div>
-            <div className="text-center md:h-40  px-16">
+            <div className="text-center md:h-40 text-white font-bold px-16">
               <h1 className="text-red-400 text-xl">{name}</h1>
               <h2 className="text-lg font-medium">{title}</h2>
-              <p className="text-base font-normal leading-8">{quote}</p>
+              <p className="text-base  leading-8">{quote}</p>
             </div>
 
             <div className="flex justify-center">
-              <FaQuoteRight className="text-red-600 text-5xl mt-8" />
+              <FaQuoteRight className="text-red-600 text-5xl mt-4" />
             </div>
           </article>
         );
@@ -83,8 +84,9 @@ function CarouselComponent({ datax }) {
       >
         <FiChevronLeft />
       </button>
+      
     </div>
   );
 }
 
-export default CarouselComponent;
+export default CarouselCompo2;
