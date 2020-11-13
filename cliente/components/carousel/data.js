@@ -8,7 +8,7 @@
         name: 'maria ferguson',
         title: 'office manager',
         quote:
-          'Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.',
+          'Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache. Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.',
       },
       {
         id: 2,
@@ -56,7 +56,7 @@
         name: 'maria ferguson',
         title: 'office manager',
         quote:
-          'Fingerstache umami squid, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.',
+          'Fingerstache umami squid, kinfolk subway tile selvage tumbraclette, kinfolk subway tile selvage tumblr man braid viral kombucha gentrify fanny pack raclette pok pok mustache.',
       },
       {
         id: 2,

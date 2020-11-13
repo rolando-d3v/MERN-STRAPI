@@ -43,31 +43,31 @@ function CarouselCompo2({ datax }) {
         return (
           <article
             key={id}
-            className={`${position} w-full h-full  bg-cover bg-center transform md:px-48 py-4 absolute transition transition-all duration-500 ease-in-out`}
+            className={`${position} w-full h-full  bg-cover bg-center transform md:px-32 lg:px-64 absolute  transition-opacity duration-700 ease-in-out`}
             style={{backgroundImage: `url(${image})`}}
           >
-            <div className="w-32 h-32 mx-auto">
+            <div className="w-32 h-32 mx-auto mt-8">
               <img
                 className="h-full w-full rounded-full object-cover"
                 src={avatar}
                 alt={name}
               />
             </div>
-            <div className="text-center md:h-40 text-white font-bold px-16">
-              <h1 className="text-red-400 text-xl">{name}</h1>
-              <h2 className="text-lg font-medium">{title}</h2>
-              <p className="text-base  leading-8">{quote}</p>
+            <div className=" text-xs sm:text-lg text-center md:h-40 text-white font-bold px-16  ">
+              <h1 className="text-red-500 text-lg ">{name}</h1>
+              <h2 className=" ">{title}</h2>
+              <p className=" leading-8">{quote}</p>
             </div>
 
-            <div className="flex justify-center">
-              <FaQuoteRight className="text-red-600 text-5xl mt-4" />
+            <div className="h-20 w-full absolute bottom-0 left-0  flex justify-center bg-blue-300 opacity-25 ">
+              {/* <FaQuoteRight className="text-red-600 text-5xl mt-4" /> */}
             </div>
           </article>
         );
       })}
 
       <button
-        className="right-0 md:mr-16 mr-4 absolute bg-red-200 p-2 rounded hover:bg-red-400"
+        className="right-0 md:mr-16 mr-4 absolute bg-indigo-200 p-2 rounded hover:bg-indigo-400"
         style={{ top: "50%" }}
         onClick={() => {
           setValue(value + 1);
@@ -76,7 +76,7 @@ function CarouselCompo2({ datax }) {
         <FiChevronRight />
       </button>
       <button
-        className="left-0 ml-4 md:ml-16  absolute bg-red-200 p-2 rounded hover:bg-red-400"
+        className="left-0 ml-4 md:ml-16  absolute bg-indigo-200 p-2 rounded hover:bg-indigo-400"
         style={{ top: "50%" }}
         onClick={() => {
           setValue(value - 1);

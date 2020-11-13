@@ -28,7 +28,7 @@ function CarouselComponent({ datax }) {
   return (
     <div
       className="grid place-items-center relative h-screen md:h-auto overflow-hidden bg-gray-300 "
-      style={{ minHeight: "48vh" }}
+      style={{ minHeight: "43vh" }}
     >
       {datax.map((item, index) => {
         const { id, title, image, quote, name } = item;
@@ -43,7 +43,7 @@ function CarouselComponent({ datax }) {
         return (
           <article
             key={id}
-            className={`${position} transform md:px-48 mt-8 absolute transition transition-all duration-500 ease-in-out `}
+            className={`${position} w-full bg-indigo-200 transform md:px-48 pt-8 absolute transition-transform duration-500 ease-in-out  `}
           >
             <div className="w-32 h-32 mx-auto">
               <img
@@ -58,8 +58,8 @@ function CarouselComponent({ datax }) {
               <p className="text-base font-normal leading-8">{quote}</p>
             </div>
 
-            <div className="flex justify-center">
-              <FaQuoteRight className="text-red-600 text-5xl mt-8" />
+            <div className="flex justify-center my-4">
+              <FaQuoteRight className="text-red-600 text-5xl mb-4 " />
             </div>
           </article>
         );
