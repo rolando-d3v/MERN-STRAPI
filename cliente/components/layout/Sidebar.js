@@ -17,8 +17,8 @@ export const navList = [
 ];
 
 export const linksDerecho = [
-  { icon: <FaIndent />, href: "/", menu: "Perfil" },
-  { icon: <FaSignOutAlt />, href: "/tabla", menu: "Salir" },
+  { icon: <FaIndent />, href: "/movies/dragon-ball", menu: "Perfil" },
+  { icon: <FaSignOutAlt />, href: "/movies/batman", menu: "Salir" },
 ];
 
 function Sidebar() {
