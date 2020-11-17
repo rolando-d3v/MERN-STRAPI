@@ -11,9 +11,9 @@ import {
 
 export const navList = [
   { icon: <FaPenSquare />, href: "/casas", menu: "Formulario" },
-  { icon: <FaSearch />, href: "/", menu: "Busqueda" },
+  { icon: <FaSearch />, href: "/carousel", menu: "Busqueda" },
   { icon: <FaTable />, href: "/carousel", menu: "Tabla" },
-  { icon: <FaOutdent />, href: "/tabla", menu: "Tabla" },
+  { icon: <FaOutdent />, href: "/themes", menu: "Tabla" },
 ];
 
 export const linksDerecho = [
@@ -24,13 +24,15 @@ export const linksDerecho = [
 function Sidebar() {
   return (
     <div
-      className="h-full w-56 flex-shrink-0"
+      className="min-h-screen w-56 flex-shrink-0 fixed"
       style={{ backgroundColor: "#242528" }}
     >
       <div className="flex items-center my-4 mx-2 ">
-        <img src="/tidal.png" alt="red" className="w-12 h-12 mx-2 " />
         <Link href="/">
-          <a className="text-gray-400 text-3xl font-extrabold text-center tracking-widest ">Tidal</a>
+          <a className=" flex items-center">
+            <img src="/tidal.png" alt="red" className="w-12 h-12 mx-2 " />
+            <span className='text-gray-400 text-3xl font-extrabold text-center tracking-widest' >Tidal</span>
+          </a>
         </Link>
       </div>
       <div className="">

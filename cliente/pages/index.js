@@ -1,12 +1,13 @@
 import React from "react";
+import Container from "../components/layout/Container";
 import Mainx from "../components/layout/Mainx";
-import Sidebar from "../components/layout/Sidebar";
 
 export default function Home() {
   return (
-    <div className="h-screen flex">
-      <Sidebar />
-      <Mainx />
+    <div className="">
+      <Container>
+        <Mainx />
+      </Container>
     </div>
   );
 }

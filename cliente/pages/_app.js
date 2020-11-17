@@ -9,7 +9,12 @@ function MyApp({ Component, pageProps }) {
         <title>Bienes House</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} />
+
+
+        
+      <div>
+        <Component {...pageProps} />
+      </div>
     </>
   );
 }

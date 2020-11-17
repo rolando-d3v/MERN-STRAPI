@@ -1,14 +1,13 @@
-// import React from "react";
-
 import { FaBed, FaBath, FaCar } from "react-icons/fa";
 
 function CardPropiedad({ e_pro }) {
   return (
-    <div className="shadow-xl rounded-b-xl m-3" style={{width: '22rem'}} >
+    <div className="shadow-xl rounded-b-xl m-3" style={{ width: "24.1rem" }}>
       <div
-        className="bg-cover bg-center  h-48 w-full rounded-t-xl"
+        className="bg-cover bg-center w-full rounded-t-xl"
         style={{
           backgroundImage: `url(http://localhost:1337${e_pro.imagen[0].url})`,
+          height: "10.5rem",
         }}
       ></div>
       {/* CONTENEDOR TEXT */}
@@ -17,23 +16,21 @@ function CardPropiedad({ e_pro }) {
           <div className="text-black font-bold text-xl mb-2 uppercase ">
             {e_pro.nombre}
           </div>
-          <div className='flex items-center hover:text-blue-500 ' >
-            <FaBed className='mx-2'  />
+          <div className="flex items-center hover:text-blue-500 ">
+            <FaBed className="mx-2" />
             <p className="text-grey-darker text-base">
               : {e_pro.habitaciones} Habitaciones
             </p>
           </div>
-          <div className='flex items-center hover:text-blue-500 ' >
-            <FaCar className='mx-2'  />
+          <div className="flex items-center hover:text-blue-500 ">
+            <FaCar className="mx-2" />
             <p className="text-grey-darker text-base">
               : {e_pro.estacionamiento} Estacionamiento
             </p>
           </div>
-          <div className='flex items-center hover:text-blue-500 ' >
-            <FaBath className='mx-2'  />
-            <p className="text-grey-darker text-base">
-              : {e_pro.sshh} sshh
-            </p>
+          <div className="flex items-center hover:text-blue-500 ">
+            <FaBath className="mx-2" />
+            <p className="text-grey-darker text-base">: {e_pro.sshh} sshh</p>
           </div>
         </div>
         <div className="flex justify-between text-xs">
@@ -46,6 +43,7 @@ function CardPropiedad({ e_pro }) {
             <div className="text-sm text-gray-500">
               <p className="leading-none">Propietario</p>
               <p>precio: $ {e_pro.precio} </p>
+              <p className="peru">precio: $ {e_pro.precio} </p>
             </div>
           </div>
 
@@ -56,6 +54,7 @@ function CardPropiedad({ e_pro }) {
           </div>
         </div>
       </div>
+
     </div>
   );
 }

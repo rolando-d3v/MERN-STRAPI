@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import clienteAxios from "../config/clienteAxios";
 import usePropiedades from "../hooks/usePropiedades";
 import useFiltro from "../hooks/useFiltro";
+import Container from "../components/layout/Container";
 
 export default function Casas() {
   const [dataPropiedades, setDataPropiedades] = useState([]);
@@ -28,18 +29,20 @@ export default function Casas() {
   }, [categoria]);
 
   return (
-    <div className="container-x">
-      <div className="mt-4">
-        <div>
-          <h3 className="text-gray-500 text-3xl hover:text-blue-500 ">
-            Nuestras Casas y Departamentos
-          </h3>
-          <FiltroUI />
-        </div>
-        <div className='flex' >
-          <Propiedades />
+    <Container>
+      <div className="container-x">
+        <div className="mt-4">
+          <div>
+            <h3 className="text-blue-500 text-2xl md:text-3xl hover:text-azul-900  font-bold ">
+              Nuestras Casas y Departamentos
+            </h3>
+            <FiltroUI />
+          </div>
+          <div className="flex">
+            <Propiedades />
+          </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }

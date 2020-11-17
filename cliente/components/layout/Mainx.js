@@ -21,7 +21,7 @@ function Mainx() {
   };
 
   return (
-    <div className="h-full w-full  bg-black px8 overflow-hidden "     >
+    <div className="w-full  bg-black h-screen "     >
       <div className="">
         <Modal ModalChange={ModalChange} closeModal={closeModal} modal={modal}  />
       <Avatar  />
