@@ -21,6 +21,7 @@ export default function User({ ev }) {
         <div className="text-purple-500"> {ev.address.city} </div>
         <div className=" text-gray-600">{ev.email} </div>
         <div className="text-gray-600"> {ev.phone} </div>
+        <div className="text-gray-600"> {ev.phone} </div>
       </div>
       <button className=" btn px-2 py-1  text-white float-right absolute right-0 bottom-0  m-3  focus:outline-none "
       
